@@ -51,4 +51,119 @@
       padding: 20px;
     }
 
-   
+    /* PRODUCTS */
+    .section-title {
+      text-align: center;
+      margin: 25px 0 10px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 15px;
+      padding: 15px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 12px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      transition: 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-3px);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .price {
+      color: #b8860b;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: white;
+      margin-top: 20px;
+      font-size: 13px;
+    }
+
+    /* WHATSAPP BUTTON */
+    .whatsapp {
+      position: fixed;
+      bottom: 18px;
+      right: 18px;
+      background: #25D366;
+      color: white;
+      padding: 12px 14px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="images/logo.png" alt="Ornique Logo">
+  <h1>ORNIQUE</h1>
+</header>
+
+<div class="hero">
+  Luxury Earrings Collection
+</div>
+
+<div class="section-title">Our Products</div>
+
+<section class="products">
+
+  <div class="product">
+    <img src="images/g001.jpg" alt="Earrings">
+    <h4>Earrings Stack</h4>
+    <p class="price">৳200</p>
+  </div>
+
+  <div class="product">
+    <img src="images/g002.jpg" alt="Earrings">
+    <h4>Earrings Stack</h4>
+    <p class="price">৳600</p>
+  </div>
+
+  <div class="product">
+    <img src="images/s001.jpg" alt="Earrings">
+    <h4>Earrings Stack</h4>
+    <p class="price">৳400</p>
+  </div>
+
+  <div class="product">
+    <img src="images/s002.jpg" alt="Earrings">
+    <h4>Earrings Stack</h4>
+    <p class="price">৳350</p>
+  </div>
+
+</section>
+
+<a class="whatsapp" href="https://wa.me/8801577085192" target="_blank">
+  WhatsApp
+</a>
+
+<footer>
+  © 2026 Ornique | Luxury Jewellery Store
+</footer>
+
+</body>
+</html>
